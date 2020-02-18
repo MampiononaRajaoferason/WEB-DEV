@@ -1,0 +1,211 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    
+  }
+html{
+    font-size: 100%;     
+    font-weight: 400;
+       
+}
+  
+
+body{
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-size: 1.125em;
+    margin: 0;
+    color: var(--color-white);
+    background-color:rgba(0,51,102, 0.9);
+}
+body::before{
+    content: "";
+    position: fixed;
+    
+    /*without the hight and width the image does not appear*/
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+    background: var(--color-darkblue);
+
+    /*background-image: url("./JNjlkP.jpg");*/
+    background-image: url('https://cdn.hipwallpaper.com/i/20/74/JNjlkP.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    background-position: center;
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+    
+    font-weight: 400;
+    line-height: 1;
+}
+
+p{
+    font-size: 1.135rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+#title{
+    position: fixed;
+    border-style: solid;
+    border-color: rgba(0,51,102, 1);
+    padding: 10px;
+    /*padding:30px;*/
+
+    margin-top:-50px;
+    width: 100%;
+    background-color:  rgba(0,51,102, 1);
+    z-index:2;
+    /*font-size: 1.2rem;*/
+}
+
+#description{
+    font-style: italic;    
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+
+
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.135rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+
+  }
+ 
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }  
+
+  
+
+form {
+    position: relative;
+    top:150px;
+    width: 50%;
+    margin: 3.125rem auto 0 auto ;
+    background-color: rgba(0,51,102, 1);
+    
+    
+
+    
+    padding: 2.5rem -2.5rem;
+
+    border-radius: 0.25rem;
+}
+
+@media (max-width: 500px){
+    form{
+        width: 95vw;
+        font-size: 0.75 rem;
+        
+    }
+    #title{
+        font-size:1.70rem;
+    }
+    #description{
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    input,
+    button,
+    select,
+    textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+   }
+#submit{
+    font-size: 0.2em;
+    
+    height: 10vh;
+    
+    padding-top: 1.7rem;
+    
+    }
+}
+
+@media (min-width: 501px) and (max-width: 800px){
+    form{
+        width: 95vw;
+        font-size: 1em;
+        
+    }
+}
+
+  
+.form-group {
+
+    
+    padding: 1rem 3.5rem 1rem 3.5rem;
+    margin-top: 0.1rem;
+    margin-bottom: -1rem;
+    
+}
+  
+.form-control{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid  darkblue ;
+    border-radius: 5px;
+    height: 2.5rem;    
+    font-size: 1rem;
+    background-color: gainsboro;
+    
+    
+    
+}
+
+#comment{
+    width: 99.05%;
+    border: 1px solid darkblue;
+    font-size:1rem;
+    background-color: gainsboro;
+    color: grey;
+}
+
+.submit-button{
+    width: 100%;
+    border-radius: 5px;
+    /*border: 1px solid darkblue;*/
+    margin-top:1rem;
+    margin-bottom:2.5rem;
+    padding: 2.6rem 2.6rem;
+    background-color: var(--color-green);
+    cursor: pointer;
+    
+}
+
+#submit{
+    font-size: 1.35rem;
+}
+
+#submit:hover{
+    background-color: palegreen;
+    color: var(--color-darkblue);
+}

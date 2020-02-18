@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="survey_styling.css">
+</head>
+<html >
+        <!--<img class= "bkg-img" src="/media/rajaoferason/LENOVO/Mampi/freeCodeCamp/1-Responsive Web Design Certification (300 hours)/8-Responsive Web Design Projects/Build a Survey form/92234543-creative-bitcoin-wallpaper-cryptocurrency-e-business-and-e-commerce-concept-3d-rendering.jpg";>
+        -->       
+    
+        
+            <h1 id="title">Financial Survey Form
+            </br>
+            <p id="description">This a survey on the financial inclusion and status of an individual.<br>Please fill in all the required sections.</p>
+        
+            </h1>
+            
+
+        <div id="main">
+                <form action="url-to-submit-the-survey" id="survey-form">
+
+                        <div class="form-group">    
+                            <label id="name-label" for="name">Name</label>
+                            <input 
+                            id="name" 
+                            name="name" 
+                            type="name" 
+                            class="form-control" 
+                            placeholder="Please enter your name" required/>                                                                
+                        </div>
+                            
+                        <div class="form-group">
+                            <!--The for attribute should be the same as the
+                                input's id name-->
+                            <label id="email-label" for="email">Email</label>
+                            <input id="email" name="email" type="email" class="form-control" placeholder="Please enter your emal address" required>
+                            <!--This mail needs to be checked by an 
+                            HTML validation error-->                 
+                        </div>
+                    
+                        <div class="form-group">
+                            <label id="number-label" for="number">Age</label>
+                            <input id="number" 
+                            type='number'
+                            name="age" 
+                            min="18" 
+                            max="99"
+                            class="form-control" 
+                            placeholder="Please enter your age" 
+                            required>    
+                                
+                            <!--This mail needs to be checked by an 
+                            HTML validation error-->
+                    
+                        </div>
+                            
+                        <div class="form-group">
+                            <p>
+                                Which financial institution do you use?
+                            </p>
+                            <select id="dropdown" name="financial_institution" class="form-control">
+                                <option disabled selected value>Please choose</option>
+                                <option value="microfinance">Microfinance</option>
+                                <option value="bank">Bank</option>
+                                <option value="dfs">Digital Financial Service</option>
+                            </select>
+                        </div>
+                    
+                    
+                        <div class="form-group">
+                            <p>
+                                Which payment method suits you the most?
+                            </p>
+                            <select name="payment_method" id="dropdown" class="form-control" required>
+                                <option disabled selected value>Please choose</option>
+                                <option value="cash">Cash</option>
+                                <option value="visa">VISA</option>
+                                <option value="masterCard">Master Card</option>
+                                <option value="payPal">Pay Pal</option>
+                                <option value="bitcoin">BitCoin</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <p>Would you recommend someone to use a bank or any financial institution?</p>
+                            <label><input class ="recommendation" type="radio" name="recommend" value="yes">Yes</label>
+                            <label><input class ="recommendation" type="radio" name="recommend" value="no">No</label>
+                            <label><input class ="recommendation" type="radio" name="recommend" value="notsure">Not sure</label>    
+                        </div>
+                            
+                        <div class="form-group">
+                                <p>Which of the following service are you familiar? Please chell all that applies</p>
+                                <label><input class="service" type="checkbox" value="loan" name="financial_service">Loan</label>
+                                <label><input class="service" type="checkbox" value="saving" name="financial_service">Saving</label>
+                                <label><input class="service" type="checkbox" value="other" name="financial_service">Other</label>
+                                <p>If Other please specify</p>
+                                <label><input type="text" class="form-control" placeholder="Other services"></label>
+                        </div>
+                    
+                        <div class="form-group">
+                            <p>Do you have any comment?</p>
+                            
+                            <textarea name="text-area" id="comment" name="comment"  cols="30" rows="10">Enter your comment here</textarea>
+                        </div>
+                    
+                        <div class="form-group">
+                            <button id="submit" class='submit-button'>Submit</button>
+                        </div>
+                    
+                    
+                    </form> 
+ 
+        </div>
+       
+       
+
+        
+    
+</html>
